@@ -7,6 +7,5 @@ router.get('/pokemon/:id', getPokemon);
 router.get('/pokemon', searchPokemons);
 router.post('/pokemon', createPokemon);
 router.put('/pokemon/:id', updatePokemon);
-router.delete('/pokemon/:id', deletePokemon);
 
 export default router;

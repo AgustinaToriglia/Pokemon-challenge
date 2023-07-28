@@ -78,14 +78,3 @@ export async function createPokemon(req, res) {
         res.status(400).json({ message: err.message });
     }
 }
-
-export async function deletePokemon(req, res) {
-    try {
-        const id = req.params.id;
-        await doDeletePokemon(id);
-
-        return res.json({ message: 'Pokemon deleted with success' });
-    } catch (err) {
-        return res.status(500).json({ message: err.message });
-    }
-}
